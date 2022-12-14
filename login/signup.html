@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+   <link rel="stylesheet" href="login.css">
+   
+</head>
+
+<body>
+
+   <div class="main">
+        <div class="form-box">
+            <h1>Sign Up</h1><br>
+            <form  id="form">
+                <input type="text" id="name" placeholder="    Enter Your Name" required><br><br>
+                <input type="email" id="email" placeholder="    Enter Your Email" required><br><br>
+                <input type="password" id="password" placeholder="    Enter Your Password" required><br><br>
+                <input type="submit" id="submit"><br>
+
+                <a class="ma" href="./signin.html">Sign In</a>
+            </form>
+        </div>
+   </div>
+
+</body>
+<script>
+        var form = document.getElementById("form")
+        var data = JSON.parse(localStorage.getItem("details")) || [];
+        form.addEventListener("submit",(e) =>{
+            e.preventDefault()
+
+            let obj = {
+                name : form.name.value,
+                email : form.email.value,
+                password : form.password.value,
+            }
+            data.push(obj)
+            
+            localStorage.setItem("details",JSON.stringify(data))
+        })
+</script>
+
+</html>
