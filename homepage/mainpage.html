@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./vp1.css">
-    <style>
-        #container{
-            width: 80%;
-            margin-left: auto;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-            margin-top: 100px;
-            border: 2px solid black;
-        }
-        #container > div{
-            padding: 10px;
-        }
-        #container > div > img{
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./product.css">
+
 </head>
+
 <body>
     <header class="header">
         <img src="./img/logo.png" alt="logo" class="logo">
@@ -42,67 +29,209 @@
         </nav>
         <div>
             <ul class="submain">
-                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png" alt=""></a></li>
-                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/3909/3909444.png" alt=""></a></li>
-                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/126/126515.png" alt=""></a></li>
-                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/2609/2609282.png" alt=""></a></li>
-                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png"
+                            alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/3909/3909444.png"
+                            alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/126/126515.png"
+                            alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/2609/2609282.png"
+                            alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt=""></a>
+                </li>
             </ul>
         </div>
 
     </header>
-
-    <div id="container">
-
+    <div class="firstdiv">
+        <b>
+            <p class="pawan">Women's Fashion & Designer Sale, Up To 70% Off</p>
+        </b>
+        <p class="d1">Shop women's fashion sale with price comparison across 500+ stores in one place. Save on the
+            largest collection of designer fashion sale for women at ModeSens.</p>
     </div>
+    <div class="product">
+        <div class="dumb">
+            <p class="md1">MODESTAR / Products</p><br><br>
+            <div class="md2">
+                <div>
+                    <p>10,000+ ITEMS</p>
+                </div><br>
+                <div id="calm">
+                   <span>Search :</span> <input type="text" id="text">
+                </div>
+            </div><br><br>
+
+            
+
+
+            <button id="btn-16">Select the Category</button><br><br>
+    
+            <div class="sdm">
+                <span> Gender :</span> <select name="" id="filter1">
+                    <option value="">Select an option</option>
+                    <option value="women">women</option>
+                    <option value="men">men</option>
+                    <option value="kids">kids</option>
+                </select><br><br>
+
+                <span> Condition :</span> <select name="" id="filter2">
+                    <option value="">Select an option</option>
+                    <option value="All">All</option>
+                    <option value="New">New</option>
+                    <option value="Pre-Owned">Pre-Owned</option>
+                </select><br><br>
+
+                <span>Category : </span><select name="" id="">
+                    <option value="select">Select an option</option>
+                    <option value="All">All</option>
+                    <option value="Limited">Limited</option>
+                </select>
+            </div>
+            <br><br>
+            <button id="btn-16">SAVE MY SEARCH</button>
+            <br><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>CATEGORY</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>DESIGNER</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>SIZE</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>COLOR</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>PRICE RANGE</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>ON SALE</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>STORE</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br>
+            <div class="slash-1">
+                <div>
+                    <h3>KEYWORD</h3>
+                </div>
+                <div>
+                    <input type="radio">
+                </div>
+            </div><br><br><br>
+            <button id="btn-16">SORT BY PRICE</button><br><br>
+           <span class="price">Price Range : </span> <select name="Price Range" id="filter3">
+                <option value="">Select an option</option>
+                <option value="low-to-high">low-to-high</option>
+                <option value="high-to-low">high-to-low</option>
+            </select>
+            <br><br><br>
+            <h3>Related Category</h3><br><br>
+            <div class="hero1">
+                <p>All New</p><br>
+                <p>Women Clothing</p><br>
+                <p>Women Shoes</p><br>
+                <p>Women Bags</p><br>
+                <p>Women Accessories</p><br>
+                <p>Women Beauty</p><br>
+                <p>Women Sale</p><br>
+                <p>Pre-Owned Women</p><br>
+            </div>
+
+
+
+
+        </div>
+        <div id="container">
+
+        </div>
+    </div>
+    <br><br><br><br>
 </body>
 <script>
- var container = document.getElementById("container")
+    var container = document.getElementById("container")
 
-fetchdata();
- function fetchdata(){
-      let promise = fetch("https://63989a35044fa481d6a3f349.mockapi.io/pr1")
-      promise.then((res) => {
-         return res.json();
-      })
+    fetchdata();
+    function fetchdata() {
+        let promise = fetch("https://63989a35044fa481d6a3f349.mockapi.io/pr1")
+        promise.then((res) => {
+            return res.json();
+        })
 
-      .then((actualdata) => {
-        showuser(actualdata)
-      })
-      .catch((err) =>{
-        console.log(err)
-      }) 
-}
-
-
-function showuser(data){
-
-      container.innerHTML = null;
-
-      data.forEach((element) =>{
-      
-      let cards = document.createElement("div")
-
-      let image = document.createElement("img")
-      image.setAttribute("src",element.image)
-
-      let name = document.createElement("h2")
-      name.innerText = element.title
-
-      let price = document.createElement("h3")
-      price.innerText =  element.price
-      
-      let desc = document.createElement("p")
-      desc.innerText = element.desc;
-
-
-      let type = document.createElement("p")
-      type.innerText = element.gender
-
-      cards.append(image,name,price,desc,type)
-      container.append(cards)
-      })
+            .then((actualdata) => {
+                showuser(actualdata)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
     }
-  
+
+
+    function showuser(data) {
+
+        container.innerHTML = null;
+
+        data.forEach((element) => {
+
+            let cards = document.createElement("div")
+
+            let image = document.createElement("img")
+            image.setAttribute("src", element.image)
+
+            let name = document.createElement("h2")
+            name.innerText = element.title
+
+            let price = document.createElement("h3")
+            price.innerText = element.price
+
+            let desc = document.createElement("p")
+            desc.innerText = element.desc;
+
+
+            let type = document.createElement("p")
+            type.innerText = element.gender
+
+            cards.append(image, name, price, desc, type)
+            container.append(cards)
+        })
+    }
+
 </script>
+
 </html>

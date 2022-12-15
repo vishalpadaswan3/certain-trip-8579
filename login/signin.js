@@ -1,15 +1,18 @@
 var data = JSON.parse(localStorage.getItem("details")) || [];
-var sam = document.getElementById("signemail")
-var pass = document.getElementById("signpassword")
+var myform = document.getElementById("myform")
 
-data.forEach((element,index) =>{
-    if (element.email == sam.value){
-        if (element.password == pass.value){
-            alert("Login Successfully")
+myform.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    data.forEach((element,index) =>{
+        if (element.email == myform.signemail.value){
+            if (element.password == myform.signpassword.value){
+                alert("Login Successfully")
+               window.location.assign("https://modesens.com/")
+            }else{
+                alert("Wrong Password")
+            }
         }else{
-            alert("Wrong Password")
+            alert("Check Your Email")
         }
-    }else{
-        alert("Check Your Email")
-    }
+    })
 })
