@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="vp1.css">
+    <link rel="stylesheet" href="product.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#"></a>MEN</li>
+                <li><a href="#"></a>BEAUTY</li>
+                <li><a href="#"></a>KIDS</li>
+                <li><a href="#"></a>DESIGNERS</li>
+                <li><a href="#"></a>COMMUNITY</li>
+                <li><a href="#"></a>WGY MODESENSE</li>
+                <li><a href="#"></a>SALE</li>
+                <li><a href="#"></a>GIFT GUIDE</li>
+            </ul>
+        </nav>
+        <div>
+            <ul class="submain">
+
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/3909/3909444.png"
+                            alt=""></a></li>
+                <li><a href="http://127.0.0.1:5500/homepage/like.html" class="name1"> <img
+                            src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt=""></a></li>
+                <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/126/126515.png"
+                            alt=""></a></li>
+                <li><a href="" class="name1" target="_blank"> <img
+                            src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt=""></a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div id="virat">
+
+    </div>
+</body>
+<script>
+    var virat = document.getElementById("virat")
+    var cartdata = JSON.parse(localStorage.getItem("cart")) || []
+
+
+    function showuser(data) {
+
+        virat.innerHTML = null;
+
+        cartdata.forEach((element, index) => {
+
+            let cards = document.createElement("div")
+
+            let image = document.createElement("img")
+            image.setAttribute("src", element.image)
+
+            let name = document.createElement("h2")
+            name.innerText = element.name
+
+            let price = document.createElement("h3")
+            price.innerText = "$ " + element.price
+
+            let type = document.createElement("p")
+            type.setAttribute("class", "p2")
+            type.innerText = element.desc
+
+            let payment = document.createElement("button")
+            payment.innerText = "Proceed to Payment"
+            payment.setAttribute("class", "virat-btn")
+
+            payment.addEventListener("click", () => {
+                cartdata.splice(index,1)
+                localStorage.setItem("cart", JSON.stringify(cartdata))
+                window.location.assign("http://127.0.0.1:5500/payment_page/pp1.html")
+            })
+
+
+
+            cards.append(image, name, type, price, payment)
+            virat.append(cards)
+        })
+    }
+    showuser();
+</script>
+
+</html>

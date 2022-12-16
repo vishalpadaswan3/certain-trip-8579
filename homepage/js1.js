@@ -18,5 +18,3 @@ const swiper = new Swiper('.swiper', {
     },
    
   });
-
-  // https://fakestoreapi.com/products
