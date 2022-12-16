@@ -1,23 +1,12 @@
+
+
 .product{
     display: flex;
     margin: auto;
     
 }
 
-#container{
-    width: 77%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    /* border: 2px solid black; */
 
-}
-#container > div{
-    padding: 10px;
-}
-#container > div > img{
-    width: 100%;
-}
 
 .dumb{
     /* border: 2px solid red; */
@@ -26,7 +15,12 @@
 }
 .firstdiv{
     height: 150px;
+    margin-top: 10px;
     /* border: 2px solid black; */
+    background-color: #eeecec;
+    padding-top: 30px;
+    /* border-bottom: 1px solid #7F7F7F; */
+    border-top: 1px solid #7F7F7F;
   
 }
 .pawan{
@@ -74,4 +68,137 @@ padding-top: 20px;
 .hero1{
     color: #3a3333;
     font-size: 18px;
+}
+#container > div{
+    height: 450x;
+    /* border: 2px solid red; */
+    text-align: center;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+    
+}
+#container > div > img {
+
+    width: 180px;
+    height: 270px;
+}
+#container{
+    width: 77%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    /* border: 2px solid black; */
+
+}
+#container > div{
+    padding: 10px;
+}
+
+#container > div > h2 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.p2{
+    color: #8E8E8E;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+#p3{
+    color: #C00000;
+}
+.like{
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    font-size: 15px;
+}
+.cart {
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+#main{
+    padding-top: 70px;
+    width: 77%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+     /* border: 2px solid black;   */
+
+}
+#main > div{
+    padding: 10px;
+}
+
+#main > div > h2 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+#main > div > img {
+
+    width: 180px;
+    height: 270px;
+}
+#main > div{
+    height: 450x;
+    /* border: 2px solid red; */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.buy {
+    width: 40%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+#virat{
+    padding-top: 70px;
+    width: 77%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+     /* border: 2px solid black;   */
+
+}
+#virat > div{
+    padding: 10px;
+}
+
+#virat > div > h2 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+#virat > div > img {
+
+    width: 180px;
+    height: 270px;
+}
+#virat > div{
+    height: 450x;
+    /* border: 2px solid red; */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.virat-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+   margin-top: 5px;
 }
