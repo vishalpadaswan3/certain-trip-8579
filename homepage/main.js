@@ -1,5 +1,6 @@
 
 var container = document.getElementById("container")
+var filtext = document.getElementById("vishu")
 var like_data = JSON.parse(localStorage.getItem("heart")) || []
 var cartdata = JSON.parse(localStorage.getItem("cart")) || []
 var arr = [];
@@ -31,21 +32,25 @@ filterdata.addEventListener("change", () => {
   var value = filterdata.value;
   if (value == "women") {
     let x = arr.filter((element) => element.desc == "female products less rates")
+    filtext.innerText = "Women's Fashion & Designer Sale, Up To 70% Off"
     showuser(x)
   } else if (value == "men") {
     let x = arr.filter((element) => element.desc == "male products less rates")
+    filtext.innerText = "Men's Fashion & Designer Sale, Up To 70% Off"
     showuser(x)
   } else if (value == "kids") {
     let x = arr.filter((element) => element.desc == "kids products less rates")
+    filtext.innerText = "Kids's Fashion & Designer Sale, Up To 70% Off"
     showuser(x)
   } else {
+    filtext.innerText = "All Fashion & Designer Sale, Up To 70% Off"
     showuser(arr)
   }
 })
 
 fetchdata();
 function fetchdata() {
-  let promise = fetch("https:63989a35044fa481d6a3f349.mockapi.io/pr4")
+  let promise = fetch("https://63989a35044fa481d6a3f349.mockapi.io/pr2")
   promise.then((res) => {
     return res.json();
   })

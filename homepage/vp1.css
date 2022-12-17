@@ -233,3 +233,12 @@
    margin-left: 1000px;
     list-style: none;
 }
+.navbar-list > li > a {
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}

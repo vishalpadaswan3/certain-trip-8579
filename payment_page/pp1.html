@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/726/726488.png">
     <link rel="stylesheet" href="./pp1.css">
 </head>
 
 <body>
     <div class="container">
-        <form action="">
+        <form action="" id="form">
             <div class="row">
                 <div class="col">
                     <h3 class="title">Billing Address</h3>
@@ -52,35 +53,42 @@
                         <img src="./a1.png" alt="">
                     </div>
 
-                    <div class="inputbox">
+                    <div class="inputbox" >
                         <span>Enter name on card :</span>
-                        <input type="text" placeholder="Mr. vishal Padaswan">
+                        <input type="text" required placeholder="Mr. vishal Padaswan">
                     </div>
                     <div class="inputbox">
                         <span>Credit card number :</span>
-                        <input type="text" placeholder="1234-5678-9012-3456">
+                        <input type="text" required placeholder="1234-5678-9012-3456">
                     </div>
                     <div class="inputbox">
                         <span>Exp month :</span>
-                        <input type="text" placeholder="Jan">
+                        <input type="text" required placeholder="Jan">
                     </div>
                     <div class="flex">
                         <div class="inputbox">
                             <span>Exp year :</span>
-                            <input type="number" placeholder="2022">
+                            <input type="number" required placeholder="2022">
                         </div>
                         <div class="inputbox">
                             <span>CVV :</span>
-                            <input type="number" placeholder="1234">
+                            <input type="number" required placeholder="1234">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <input type="submit" value="Proceed" class="submit-btn">
+            <input type="submit" value="Proceed"  class="submit-btn">
 
         </form>
     </div>
 </body>
-
+    <script>
+            var myform = document.getElementById("form")
+            myform.addEventListener("submit",(e) =>{
+                e.preventDefault();
+                alert("Enter Your OTP Here")
+                window.location.assign("http://127.0.0.1:5500/payment_page/pp2.html")
+            })
+    </script>
 </html>
