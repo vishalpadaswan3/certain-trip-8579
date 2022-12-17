@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3631/3631618.png">
    <link rel="stylesheet" href="login.css">
    
 </head>
@@ -41,6 +42,8 @@
             data.push(obj)
             
             localStorage.setItem("details",JSON.stringify(data))
+            alert("Sign Up Successfully Done")
+            window.location.assign("http://127.0.0.1:5500/login/signin.html")
         })
 </script>
 

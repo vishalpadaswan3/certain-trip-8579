@@ -18,3 +18,8 @@ const swiper = new Swiper('.swiper', {
     },
    
   });
+
+var come1 = document.getElementById("come1")
+come1.addEventListener("click", () =>{
+  confirm("You want to logout")
+})

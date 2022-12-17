@@ -7,9 +7,7 @@ myform.addEventListener("submit", (e) =>{
         if (element.email == myform.signemail.value){
             if (element.password == myform.signpassword.value){
                 alert("Login Successfully")
-               window.location.assign("https://modesens.com/")
-            }else{
-                alert("Wrong Password")
+               window.location.assign("http://127.0.0.1:5500/homepage/index1.html")
             }
         }else{
             alert("Check Your Email")
