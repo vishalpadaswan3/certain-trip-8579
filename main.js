@@ -131,7 +131,7 @@ function showuser(data) {
         cartdata.push(element)
         localStorage.setItem("cart", JSON.stringify(cartdata))
         alert("Product Added To Cart")
-        window.location.assign("http://127.0.0.1:5500/homepage/cart.html")
+        window.location.assign("/cart.html")
       }
     })
 

@@ -14,23 +14,23 @@
 
 <body>
     <header class="header">
-        <a href="http://127.0.0.1:5500/homepage/index1.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+        <a href="/index1.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">WOMEN</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">MEN</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">BEAUTY</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">KIDS</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">DESIGNERS</a></li>
+                <li><a href="/mainpage.html">WOMEN</a></li>
+                <li><a href="/mainpage.html">MEN</a></li>
+                <li><a href="/mainpage.html">BEAUTY</a></li>
+                <li><a href="/mainpage.html">KIDS</a></li>
+                <li><a href="/mainpage.html">DESIGNERS</a></li>
                 <li><a href="https://modesens.com/community/">COMMUNITY</a></li>
                 <li><a href="https://modesens.com/why-modesens/">WGY MODESENSE</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">SALE</a></li>
-                <li><a href="http://127.0.0.1:5500/homepage/mainpage.html">GIFT GUIDE</a></li>
+                <li><a href="/mainpage.html">SALE</a></li>
+                <li><a href="/mainpage.html">GIFT GUIDE</a></li>
             </ul>
         </nav>
         <div>
             <ul class="submain">
-                <li><a href="http://127.0.0.1:5500/homepage/cart.html" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/4379/4379542.png"
+                <li><a href="/cart.html" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/4379/4379542.png"
                     alt=""></a></li>
                 <li><a href="" class="name1"> <img src="https://cdn-icons-png.flaticon.com/512/3909/3909444.png"
                             alt=""></a></li>
@@ -185,7 +185,7 @@
             buy.addEventListener("click", () =>{
                 cartdata.push(element)
                 localStorage.setItem("cart",JSON.stringify(cartdata))
-                window.location.assign("http://127.0.0.1:5500/homepage/cart.html")
+                window.location.assign("/cart.html")
                 like_data.splice(index,1)
                 localStorage.setItem("heart",JSON.stringify(like_data))
                 showuser(like_data)
